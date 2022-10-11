@@ -1,5 +1,6 @@
 .courseDetails{
-    border: 2px solid rgb(229, 9, 9);
+    border: 2px solid gray;
+    border-radius: 10px;
     background: rgb(53, 51, 51);
     padding: 8px;
 }
@@ -7,4 +8,19 @@
     width:100%;
     height: 230px;
     
+}
+.corseText{
+    text-align: center;
+}
+.corseBtnAndQuiz{
+    display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.corseBtnAndQuiz a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+font-size: 16px;
+padding: 8px;
 }
