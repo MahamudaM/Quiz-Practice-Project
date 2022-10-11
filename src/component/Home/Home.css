@@ -1,0 +1,18 @@
+
+
+body{
+    background: black;
+    color: white;
+}
+.home-banner{
+    margin-bottom: 40px;
+}
+.home-banner img{
+width: 100%;
+}
+.home-course-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:25px;
+    margin: 80px;
+}

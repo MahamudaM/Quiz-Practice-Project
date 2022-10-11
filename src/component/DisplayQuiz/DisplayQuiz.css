@@ -1,0 +1,21 @@
+.quiz{
+    width: 570px;
+    background: #950740;
+    color:white;
+    border: 2px solid gray;
+    margin: 20px auto;
+    padding: 20px;
+}
+.allAnser{
+    display: flex;
+    flex-direction: column; 
+    
+}
+.anserBtn{
+    list-style: none;
+    
+
+}
+
+
+

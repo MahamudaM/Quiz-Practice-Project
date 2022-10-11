@@ -1,0 +1,10 @@
+.courseDetails{
+    border: 2px solid rgb(229, 9, 9);
+    background: rgb(53, 51, 51);
+    padding: 8px;
+}
+.courseDetails img{
+    width:100%;
+    height: 230px;
+    
+}

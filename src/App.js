@@ -4,6 +4,7 @@ import './App.css';
 import Blog from './component/Blog/Blog';
 import Home from './component/Home/Home';
 import QuizChart from './component/QuizChart/QuizChart';
+import QuizTest from './component/QuizTest/QuizTest';
 import Main from './Layout/Main';
 
 function App() {
@@ -13,10 +14,23 @@ function App() {
       element:<Main></Main>,
       children:[
         {
-          path: '/',element:<Home></Home>
+          path: '/',
+          loader:async()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element:<Home></Home>
         },
         {
-          path:'/quizChart',element:<QuizChart></QuizChart>
+          path:'/quizTest/:quizTestId',
+          loader:async({params})=>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizTestId}`);
+          },
+          element:<QuizTest></QuizTest>
+        },
+        {
+          path:'/quizChart',
+          
+          element:<QuizChart></QuizChart>
         },
         {
           path:'/blog',element:<Blog></Blog>
@@ -24,6 +38,7 @@ function App() {
       ]
   
     }
+    
   ])
   return (
     <div className="App">
