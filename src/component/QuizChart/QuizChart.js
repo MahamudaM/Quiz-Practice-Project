@@ -1,9 +1,22 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import DisplayRechart from '../DisplayRechart/DisplayRechart';
 
 const QuizChart = () => {
+    const {data}=useLoaderData()
+    
+    console.log(data)
     return (
-        <div>
+        <div >
             <h1>quizchart</h1>
+            {
+               
+                <DisplayRechart
+                    
+                    data={data}
+                    ></DisplayRechart>
+                    
+            }
         </div>
     );
 };

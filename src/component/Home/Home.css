@@ -1,6 +1,10 @@
-
-
 body{
+    background: black;
+    color: white;
+} 
+
+
+.home-container{
     background: black;
     color: white;
 }

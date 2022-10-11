@@ -6,7 +6,7 @@ import CourstDetails from '../CourseDetails/CourstDetails';
 const Home = () => {
     const {data} =useLoaderData()
     
-    console.log(data)
+   
     return (
         <div className='home-container'>
             <div className="home-banner" style={{ backgroundImage: `url(${pic})`} }>

@@ -29,7 +29,9 @@ function App() {
         },
         {
           path:'/quizChart',
-          
+          loader:async()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
           element:<QuizChart></QuizChart>
         },
         {
@@ -37,6 +39,10 @@ function App() {
         }
       ]
   
+    },
+    {
+      path:'*',
+      element:<h1>sorry user,This page are not found</h1>
     }
     
   ])
