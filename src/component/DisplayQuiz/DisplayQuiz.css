@@ -13,7 +13,7 @@
 }
 .anserBtn{
     list-style: none;
-    
+    padding: 10px;
 
 }
 .green{
@@ -24,4 +24,7 @@
     background: red;
     color: white;
 }
-
+.btnIcon{
+    height: 30px;
+    width: 30px;
+}

@@ -1,7 +1,9 @@
 
 
 import './DisplayQuiz.css'
-
+import { EyeIcon } from '@heroicons/react/24/solid'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // let [ color, setColor ] = useState ( false )
 // onClick = { () => setColor( !color ) }
 // className = { color ? "click korle jeita" ; "click na korle jeita" }
@@ -24,9 +26,12 @@ console.log(x)
         
             
         }
-    
+        const notify = () => toast(correctAnswer);
     return (
         <div className='quiz'>
+            
+                <button className='eyeBtn' onClick={notify}><EyeIcon className="btnIcon"/></button>
+                <ToastContainer />
             <p>{question}
             
             <ul className='allAnser'>
