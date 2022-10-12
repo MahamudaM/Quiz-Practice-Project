@@ -6,13 +6,13 @@ const CourstDetails = ({course}) => {
     return (
         <div className='courseDetails'>
             <img src={logo} alt="" />
-            <h2 className='corseText'>{name}</h2>
+            <h2 className='corseText'> {name} Quiz</h2>
           
         
        
        <div className="corseBtnAndQuiz">
        <h4>Total Quiz  : {total}</h4>
-       <Link to={`/quizTest/${id}` }><button className='courseBtn'>start practice</button></Link>
+       <Link to={`/quizTest/${id}` }><button className='courseBtn'>start Quiz</button></Link>
        </div>
             
            

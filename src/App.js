@@ -1,5 +1,5 @@
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './component/Blog/Blog';
 import Home from './component/Home/Home';
@@ -27,6 +27,7 @@ function App() {
           },
           element:<QuizTest></QuizTest>
         },
+        
         {
           path:'/quizChart',
           loader:async()=>{
@@ -34,14 +35,16 @@ function App() {
           },
           element:<QuizChart></QuizChart>
         },
+
         {
           path:'/blog',element:<Blog></Blog>
         }
       ]
   
     },
+    
     {
-      path:'/*',
+      path:'*',
       element:<h1>sorry user,This page are not found</h1>
     }
     

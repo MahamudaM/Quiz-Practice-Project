@@ -10,8 +10,10 @@ const Header = () => {
                 </div>
             <div className="navLink">
             <Link to='/'>Home</Link>
+            
             <Link to = '/quizChart'>Statistics</Link>
             <Link to='/blog'>Blog</Link>
+            <Link to='/route'>4o4Route</Link>
             </div>
         </nav>
         </div>

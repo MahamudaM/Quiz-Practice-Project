@@ -1,6 +1,9 @@
 .navbar{
     background: black;
     color: white;
+    border-bottom: 1px solid rgb(62, 61, 61);
+    
+
 }
 .navbar-wrapper{
     display: flex;
@@ -17,7 +20,7 @@
 
 }
 .navLink a{
-    color: white;
+    color: #f13782;
     text-decoration: none;
     margin-left: 10px;
     font-size: 18px;

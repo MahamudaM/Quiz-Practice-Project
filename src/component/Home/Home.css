@@ -4,25 +4,26 @@ body{
 } 
 
 
-/* .home-container{
-    background: black;
-    color: white;
-} */
-/* .home-banner{
-    margin-bottom: 40px;
-} */
-/* .home-banner img{
-width: 100%;
-} */
+
 .home-course-details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap:25px;
     margin: 80px;
+   
 }
 .banerText{
     text-transform: uppercase;
     text-align: center;
     padding-top: 80px;
     color: #950740;
+    font-weight: 700;
+    font-size: 36px;
+}
+.banarParagrap{
+    width: 41%;
+    margin: auto;
+    color: #950740;
+    font-size: 17px;
+    font-weight: 500;
 }

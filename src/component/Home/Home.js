@@ -14,7 +14,8 @@ const Home = () => {
             backgroundSize:'cover',
             height:'344px' }}>
                <h1 className='banerText'>develope uour skil with practicing quiz</h1>
-               
+               <p className='banarParagrap'>The free quiz  for testing students and staff.Our free test improve your programming
+                 knowledge.Assessment, instruction, and practice that motivate every student to mastery</p>
             </div>
             <div className="home-course-details">
             {

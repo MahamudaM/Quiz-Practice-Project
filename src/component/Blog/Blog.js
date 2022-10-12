@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './Blog.css'
 const Blog = () => {
     return (
-        <div>
+        <div className='blog-container'>
            <div className="singleQuetion">
             <h3>what is the purpose of react router</h3>
             <p>React Router keeps your UI in sync with the URL. It has a simple API with powerful features

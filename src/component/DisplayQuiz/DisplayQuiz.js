@@ -27,7 +27,7 @@ const DisplayQuiz = ({mcq}) => {
               toast(' Excelient ! you choice correct answer', x)          
         }
         else{
-            toast('Opps ! you answer is wrong', x)  
+            toast('Opps ! you answer is incorrect', x)  
             // event.currentTarget.classList.add('red'); 
         }
         
