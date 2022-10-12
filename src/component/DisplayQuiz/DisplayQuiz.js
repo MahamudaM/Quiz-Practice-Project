@@ -11,7 +11,7 @@ import {  useState } from 'react';
 
 const DisplayQuiz = ({mcq}) => {
   
-    const {question,options ,correctAnswer,id}=mcq
+    const {question,options ,correctAnswer}=mcq
     // show toast
 
     let [ color, setColor ] = useState ( false )
