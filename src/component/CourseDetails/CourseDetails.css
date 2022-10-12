@@ -1,13 +1,13 @@
 .courseDetails{
     border: 2px solid gray;
     border-radius: 10px;
-    background: rgb(53, 51, 51) ;
+    background: #950740 ;
     padding: 8px;
 }
 .courseDetails img{
     width:100%;
     height: 230px;
-    background: #394F8A;
+    /* background: rgb(246, 224, 53); */
     border-radius: 10px;
 }
 .corseText{
@@ -28,8 +28,8 @@ padding: 8px;
 }
 
 .courseBtn{
-   background: #950740;
-   color: white;
+   background: white;
+   color: #f13782;
    border: none;
    padding: 10px;
    font-size: 18px;

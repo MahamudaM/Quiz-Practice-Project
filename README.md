@@ -1,8 +1,16 @@
-=> Live server link : 
+=>QUIZ-REACT-APP project
 
-=>Bolleting poin
--Responsive web desine with vanilla css
--
+=> Live server link : https://mellow-bienenstitch-56060f.netlify.app/
+
+**Features
+-Responsive Layout Design with vanella css
+-Use heroIcon
+-Error 404 page
+-Built on Latest React
+-Attractive UI design
+-Added Chart Options
+-Toast Notification
+-React Router
 
 
 

@@ -4,9 +4,8 @@ import './DisplayQuiz.css'
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {  useState } from 'react';
-// import { useToast } from 'react-toastify';
-// import { ToastProvider} from 'react-toast-notifications';
+// import {  useState } from 'react';
+
 
 
 const DisplayQuiz = ({mcq}) => {
@@ -14,13 +13,13 @@ const DisplayQuiz = ({mcq}) => {
     const {question,options ,correctAnswer}=mcq
     // show toast
 
-    let [ color, setColor ] = useState ( false )
+    // let [ color, setColor ] = useState ( false )
     
 
 
     const evenHandler =(x)=>{
         if(x===correctAnswer){
-            setColor( !color )
+            // setColor( !color )
            
 
            
@@ -45,7 +44,7 @@ const DisplayQuiz = ({mcq}) => {
             
             <ul className='allAnser'>
       {options.map((x) =>
-        <button className={`anserBtn ${ color ? " green" : "" }`} onClick={()=>evenHandler(x)}>
+        <button className={`anserBtn `} onClick={()=>evenHandler(x)}>
         <li key={x.toString()} className= {`anser `}>
           {x}
         </li>
@@ -53,7 +52,7 @@ const DisplayQuiz = ({mcq}) => {
        
         )}
     </ul>
-    <ToastContainer />
+    <ToastContainer position="top-center"/>
   </p>   
   </div>
   

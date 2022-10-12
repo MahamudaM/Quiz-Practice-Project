@@ -12,18 +12,24 @@ body{
     margin: 80px;
    
 }
+/* .home-banner{
+    position: relative;
+    
+} */
+/* .banerTexts{
+ position: absolute;    
+}  */
 .banerText{
     text-transform: uppercase;
     text-align: center;
     padding-top: 80px;
     color: #950740;
     font-weight: 700;
-    font-size: 36px;
+    
 }
-.banarParagrap{
-    width: 41%;
-    margin: auto;
-    color: #950740;
-    font-size: 17px;
-    font-weight: 500;
+
+
+@media screen {
+    
 }
+

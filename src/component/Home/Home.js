@@ -9,13 +9,17 @@ const Home = () => {
    
     return (
         <div className='home-container'>
+          {/* background img */}
             <div className="home-banner"  style={{ backgroundImage: `url(${pic})`,
             backgroundRepeat:'no-repeat',
-            backgroundSize:'cover',
+            backgroundSize:'100%',
             height:'344px' }}>
-               <h1 className='banerText'>develope uour skil with practicing quiz</h1>
-               <p className='banarParagrap'>The free quiz  for testing students and staff.Our free test improve your programming
-                 knowledge.Assessment, instruction, and practice that motivate every student to mastery</p>
+{/* img text */}
+
+<h1 className='banerText'>develope uour skil with practicing quiz</h1>
+               {/* <p className='banarParagrap'>The free quiz  for testing students and staff.Our free test improve your programming
+                 knowledge.Assessment, instruction, and practice that motivate every student to mastery</p> */}
+
             </div>
             <div className="home-course-details">
             {

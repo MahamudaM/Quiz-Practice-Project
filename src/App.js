@@ -45,7 +45,7 @@ function App() {
     
     {
       path:'*',
-      element:<h1>sorry user,This page are not found</h1>
+      element:<h1 style={{color:'red'}}>sorry user, This page are not found</h1>
     }
     
   ])

@@ -4,14 +4,14 @@ const Blog = () => {
     return (
         <div className='blog-container'>
            <div className="singleQuetion">
-            <h3>what is the purpose of react router</h3>
-            <p>React Router keeps your UI in sync with the URL. It has a simple API with powerful features
+            <h3>What is the purpose of react router ?</h3>
+            <p>React Router keeps your UI in sync with the URL.React Router is a standard library for routing in React. It has a simple API with powerful features
                  like lazy code loading, dynamic route matching, and location
  transition handling built right in. Make the URL your first thought, not an after-thought.</p>
            </div>
 
            <div className="singleQuetion">
-            <h3>how does context api works in react</h3>
+            <h3>How does context api works in react ?</h3>
             <p>React.createContext() is all you need. It returns a consumer and a provider. Provider
          is a component that as it's names suggests provides the state to its children. It will 
          hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state </p>
