@@ -8,31 +8,32 @@ const Home = () => {
     
    
     return (
-        <div className='home-container'>
-          {/* background img */}
-            <div className="home-banner"  style={{ backgroundImage: `url(${pic})`,
-            backgroundRepeat:'no-repeat',
-            backgroundSize:'100%',
-            height:'344px' }}>
+      <div className='home-container'>
+      {/* background img */}
+        <div className="home-banner"  style={{ backgroundImage: `url(${pic})`,
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'100%',
+        height:'344px' }}>
 {/* img text */}
 
 <h1 className='banerText'>develope uour skil with practicing quiz</h1>
-               {/* <p className='banarParagrap'>The free quiz  for testing students and staff.Our free test improve your programming
-                 knowledge.Assessment, instruction, and practice that motivate every student to mastery</p> */}
+           <p className='banarParagrap'>The free quiz  for testing students and staff.Our free test improve your programming
+             knowledge.</p>
 
-            </div>
-            <div className="home-course-details">
-            {
-  data.map(course=><CourstDetails 
-    key={course.id}
-      course={course}
-      ></CourstDetails>)
-  
-            }
-            
-            </div>
         </div>
-    );
+
+        <div className="home-course-details">
+        {
+data.map(course=><CourstDetails 
+key={course.id}
+  course={course}
+  ></CourstDetails>)
+
+        }
+        
+        </div>
+</div>
+);      
 };
 
 export default Home;

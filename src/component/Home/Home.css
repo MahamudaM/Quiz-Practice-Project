@@ -22,14 +22,43 @@ body{
 .banerText{
     text-transform: uppercase;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
     color: #950740;
     font-weight: 700;
     
 }
-
-
-@media screen {
-    
+.banarParagrap{
+    width: 41%;
+    margin: auto;
+    color: #950740;
+    font-size: 17px;
+    font-weight: 500;
+   
 }
 
+@media only screen and (max-width:576px) {
+    .home-banner{
+       width: 100%;
+        
+    }
+    .home-course-details{
+        display: flex;
+    flex-direction: column;
+    }
+    
+    .banerText{
+        padding-top: 14px;
+        font-size: 10px;
+       
+    }
+    .banarParagrap{
+       
+        display: none;
+    }
+}
+@media only screen and (max-width:768px){
+        .banarParagrap{
+        display: none;
+       
+    }  
+}

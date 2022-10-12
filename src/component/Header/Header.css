@@ -27,3 +27,24 @@
     
   
 }
+
+@media only screen and (max-width:576px) {
+    .navbar{
+      width:100%;
+    } 
+    .navbar-wrapper{
+      
+        padding: 0 12px;
+    }
+    .logoTex{
+        
+        font-size: 18px;
+    }
+    .navLink a{
+        
+        margin-left: 12px;
+        font-size: 16px;
+        
+      
+    }
+}
