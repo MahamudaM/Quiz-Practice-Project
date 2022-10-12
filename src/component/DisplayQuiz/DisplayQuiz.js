@@ -4,23 +4,30 @@ import './DisplayQuiz.css'
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// let [ color, setColor ] = useState ( false )
-// onClick = { () => setColor( !color ) }
-// className = { color ? "click korle jeita" ; "click na korle jeita" }
-
-
+import {  useState } from 'react';
+// import { useToast } from 'react-toastify';
+// import { ToastProvider} from 'react-toast-notifications';
 
 
 const DisplayQuiz = ({mcq}) => {
-    const {question,options ,correctAnswer}=mcq
+  
+    const {question,options ,correctAnswer,id}=mcq
+    // show toast
+
+    let [ color, setColor ] = useState ( false )
     
-    const evenHandler=(x)=>{
+
+
+    const evenHandler =(x)=>{
         if(x===correctAnswer){
-console.log(x)
-            alert('corret anser')
+            setColor( !color )
+           
+
+           
+              toast(' Excelient ! you choice correct answer', x)          
         }
         else{
-            
+            toast('Opps ! you answer is wrong', x)  
             // event.currentTarget.classList.add('red'); 
         }
         
@@ -28,25 +35,38 @@ console.log(x)
         }
         const notify = () => toast(correctAnswer);
     return (
+        <div>
+            
         <div className='quiz'>
             
                 <button className='eyeBtn' onClick={notify}><EyeIcon className="btnIcon"/></button>
-                <ToastContainer />
-            <p>{question}
+                
+            <p>{question.slice (3, -4)}
             
             <ul className='allAnser'>
       {options.map((x) =>
-        <button className={`anserBtn `} onClick={()=>evenHandler(x)}>
-            <li key={x.toString()} className= 'anser '>
+        <button className={`anserBtn ${ color ? " green" : "" }`} onClick={()=>evenHandler(x)}>
+        <li key={x.toString()} className= {`anser `}>
           {x}
         </li>
         </button>
-        
+       
         )}
     </ul>
+    <ToastContainer />
   </p>   
+  </div>
+  
+ 
         </div>
+        
     );
 };
 
-export default DisplayQuiz;
+// const Apps = () => (
+//     <ToastProvider>
+//       <DisplayQuiz />
+//     </ToastProvider>
+//   )
+
+export default DisplayQuiz

@@ -6,7 +6,7 @@ const Header = () => {
         <div className='navbar'>
             <nav className='navbar-wrapper'>
             <div className='nab-logo'>
-            <h1>Quiz world </h1>
+            <h1 className='logoTex'>Quiz world </h1>
                 </div>
             <div className="navLink">
             <Link to='/'>Home</Link>

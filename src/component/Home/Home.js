@@ -9,8 +9,12 @@ const Home = () => {
    
     return (
         <div className='home-container'>
-            <div className="home-banner" style={{ backgroundImage: `url(${pic})`} }>
-               <img src={pic} alt="" />
+            <div className="home-banner"  style={{ backgroundImage: `url(${pic})`,
+            backgroundRepeat:'no-repeat',
+            backgroundSize:'cover',
+            height:'344px' }}>
+               <h1 className='banerText'>develope uour skil with practicing quiz</h1>
+               
             </div>
             <div className="home-course-details">
             {

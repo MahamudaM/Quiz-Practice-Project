@@ -41,7 +41,7 @@ function App() {
   
     },
     {
-      path:'*',
+      path:'/*',
       element:<h1>sorry user,This page are not found</h1>
     }
     

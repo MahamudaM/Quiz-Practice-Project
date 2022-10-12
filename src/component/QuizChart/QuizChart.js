@@ -8,7 +8,7 @@ const QuizChart = () => {
     console.log(data)
     return (
         <div >
-            <h1>quizchart</h1>
+            <h1 style={{textAlign:'center'}}>Quiz measure by Rechart</h1>
             {
                
                 <DisplayRechart
